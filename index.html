@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECyTEM - Segundo Semestre</title>
+    <style>
+        /* ===== ESTILOS GENERALES ===== */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8d7e8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ===== NAVEGACIÓN ===== */
+        nav {
+            background-color: #f2a7c6;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #c25287;
+        }
+
+        /* ===== ENCABEZADO ===== */
+        header {
+            background-color: #f4bdd7;
+            padding: 20px;
+            text-align: center;
+            color: #8c3a6e;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* ===== CONTENEDOR DE BOTONES ===== */
+        .contenedor {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        .boton {
+            display: block;
+            background-color: #ffffff;
+            border: 2px solid #c25287;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            font-size: 20px;
+            color: #c25287;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #f4bdd7;
+        }
+
+        /* ===== INFORMACIÓN Y ESTADÍSTICAS ===== */
+        .info {
+            text-align: center;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #c2185b;
+        }
+
+        /* ===== SECCIÓN CECYTEM ===== */
+        .materia {
+            background-color: white;
+            border: 2px solid #e75480;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px auto;
+            width: 80%;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .materia h2 {
+            color: #c2185b;
+            text-align: center;
+        }
+
+        .materia h3 {
+            color: #e75480;
+        }
+
+        .materia p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* ===== BOTÓN MAPA ===== */
+        .btn-mapa {
+            display: inline-block;
+            background-color: #c25287;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-mapa:hover {
+            background-color: #e75480;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+    <nav>
+        <a href="Implemnta.html">Implementa</a>
+        <a href="Codifica.html">Codifica</a>
+        <a href="Matematicas.html">Matemáticas</a>
+        <a href="lengua.html">Lengua</a>
+        <a href="ingles.html">Inglés</a>
+        <a href="#cecytem">CECyTEM</a>
+    </nav>
+
+    <!-- ===== ENCABEZADO PRINCIPAL ===== -->
+    <header>CECyTEM – Segundo Semestre</header>
+
+    <!-- ===== BOTONES DE MATERIAS ===== -->
+    <div class="contenedor">
+        <a class="boton" href="Implemnta.html">Implementa Software</a>
+        <a class="boton" href="Codifica.html">Codifica Software</a>
+        <a class="boton" href="Matematicas.html">Matemáticas</a>
+        <a class="boton" href="lengua.html">Lengua y Comunicación</a>
+        <a class="boton" href="ingles.html">Inglés</a>
+    </div>
+
+    <!-- ===== INFORMACIÓN Y ESTADÍSTICAS ===== -->
+    <div class="info">
+        <p id="fechaHora"></p>
+        <p id="visitas"></p>
+    </div>
+
+    <!-- ===== SECCIÓN CECYTEM ===== -->
+    <section id="cecytem" class="materia">
+        <h2>🏫 Sobre el CECyTEM</h2>
+
+        <h3><i>HISTORIA</i></h3>
+        <p>
+            El Colegio de Estudios Científicos y Tecnológicos del Estado de México (CECyTEM)
+            es una institución pública de nivel medio superior que forma a jóvenes con una
+            educación científica, tecnológica y humanística, dando la opción de egresar con una 
+            titulación técnica además del bachillerato, lo que permite incorporarse al mundo laboral
+            o continuar con estudios superiores.
+        </p>
+        <p>
+            Fue creado en 1994 mediante un decreto del gobierno del Estado de México, con el propósito 
+            de ampliar la educación tecnológica en el estado y atender la demanda educativa en diferentes municipios.
+        </p>
+
+        <h3><i>UBICACIÓN</i></h3>
+        <p>
+            Camino Viejo a Melchor Ocampo s/n,<br>
+            Fraccionamiento "Paseos del Bosque",<br>
+            Col. Ex-Hacienda Xaltipa,<br>
+            C.P. 54850, Cuautitlán, Estado de México.
+        </p>
+        
+        <p>📍 Ubicación del plantel:</p>
+        <p style="text-align: center;">
+            <a href="https://www.google.com/maps/search/?api=1&query=CECyTEM+Cuautitlán+Estado+de+México"
+               target="_blank"
+               class="btn-mapa">
+               Ver ubicación en Google Maps
+            </a>
+        </p>
+    </section>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // FECHA Y HORA EN TIEMPO REAL
+        function actualizarFechaHora() {
+            const ahora = new Date();
+            const opciones = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+
+            document.getElementById("fechaHora").textContent =
+                "📅 Fecha y hora: " + ahora.toLocaleDateString("es-MX", opciones);
+        }
+
+        actualizarFechaHora();
+        setInterval(actualizarFechaHora, 1000);
+
+        // CONTADOR DE VISITAS
+        let visitas = localStorage.getItem("contadorVisitas");
+
+        if (visitas === null) {
+            visitas = 1;
+        } else {
+            visitas = parseInt(visitas) + 1;
+        }
+
+        localStorage.setItem("contadorVisitas", visitas);
+
+        document.getElementById("visitas").textContent =
+            "👁️ Número de visitas: " + visitas;
+    </script>
+
+</body>
+</html>
